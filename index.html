@@ -149,15 +149,12 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+		    <script>
+        window.history.pushState({}, 'Nouveau Titre', '/nouvelle-url');
+    </script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-		        	// Vérifie si l'URL contient un hash
-		        	if (window.location.hash) {
-		            	// Supprime le hash de l'URL sans recharger la page
-		            	window.history.replaceState({}, document.title, window.location.pathname + window.location.search);
-		        	}
-   			 </script>
+
 			
 				
 

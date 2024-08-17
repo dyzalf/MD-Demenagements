@@ -58,11 +58,7 @@
         if ($menu._lock()) $body.toggleClass('is-menu-visible');
     };
 
-    // Function to update the URL
-    function updateURL(newPath) {
-        // Change the URL without reloading the page
-        window.history.pushState({}, '', newPath);
-    }
+    
 
     $menu
         .appendTo($body)
@@ -90,8 +86,7 @@
             // Hide menu
             $menu._hide();
 
-            // Update the URL
-            updateURL(href);
+           
 
             // Redirect after hiding the menu
             window.setTimeout(function() {
@@ -110,5 +105,13 @@
             // Hide on escape
             if (event.keyCode == 27) $menu._hide();
         });
+
+    // Function to update the URL
+    function updateURL(newPath) {
+        // Change the URL without reloading the page
+        window.history.pushState({}, '', newPath);
+    }
+     // Update the URL
+            updateURL(href);
 
 })(jQuery);

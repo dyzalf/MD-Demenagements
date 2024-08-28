@@ -150,9 +150,11 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 		<script>
-  $(document).ready(function() {
-    if (window.location.pathname === "/index.html") {
-      window.history.replaceState(null, null, "/accueil");
+  document.addEventListener("DOMContentLoaded", function() {
+    var currentPath = window.location.pathname;
+    if (currentPath.endsWith("index.html")) {
+      var newPath = currentPath.replace("index.html", "accueil");
+      window.history.replaceState(null, null, newPath);
     }
   });
 </script>

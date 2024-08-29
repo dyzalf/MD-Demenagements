@@ -19,13 +19,13 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">MDD</a></h1>
-						<nav>
+
+						<!--nav>
 							<a href="#menu">Menu</a>
-						</nav>
+						</nav-->
 					</header>
 
-				<!-- Menu -->
+				<!-- Menu 
 					<nav id="menu">
 						<div class="inner">
 							<h2>Menu</h2>
@@ -35,12 +35,29 @@
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
-					</nav>
+					</nav-->
+
+				<img src="images/logo.png" alt="MD-Demenagements logo" class="logo">	
 
 				<!-- Bouton Tel-->
-				<a href="https://wa.me/+41783837075" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; text-decoration: none; border: none;">
+				<a href="https://wa.me/+41783837075" target="_blank" style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; text-decoration: none; border: none;">
 					<img src="images/wa.png" alt="Contactez-nous sur WhatsApp" style="width:50px; height:50px;">
 				</a>
+
+				<button onclick="scrollToTop()">UP</button>
+				<button onclick="scrollToBottom()">DOWN</button>
+				
+	
+				<script>
+					function scrollToTop() {
+						window.scrollTo({ top: 0, behavior: 'smooth' });
+					}
+			
+					function scrollToBottom() {
+						window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+					}
+
+				</script>
 				
 				  
 								
@@ -87,9 +104,8 @@
 										<p><b>Libérez de l’espace avec notre service de déstockage complet !</b> Que vous ayez besoin de vider un entrepôt, un bureau ou tout autre type de local, nous sommes là pour vous aider. Notre équipe gère le tri, l’emballage et l’évacuation de tous types d’objets, qu’ils soient volumineux, encombrants ou délicats. Nous nous engageons à recycler et à disposer des articles de manière responsable. Simplifiez votre déstockage avec notre service rapide et efficace, adapté à vos besoins spécifiques.</p>										
 									</div>
 								</div>
-							</section>
-
-
+							</section>							
+							
 
 				<!-- Footer -->
 					<section id="footer">
@@ -130,14 +146,14 @@
 									Chemin de La Chapelle 8,<br />
 									1615 Bossonnens
 								</li>
-								<li class="icon solid fa-phone">+41 76 383 70 75</li>
-								<li class="icon solid fa-envelope"><a href="mailto:information@untitled.tld">information@untitled.tld</a></li>
+								<li class="icon solid fa-phone">+41 78 383 70 75</li>
+								<li class="icon solid fa-envelope"><a href="mailto:infos@md-demenagements.ch">infos@md-demenagements.ch</a></li>
 								<!--li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li-->
 							</ul>
 							<ul class="copyright">
-								<li>&copy; MD-Déménagments</li><li>Design: Dyzalf</li>
+								<li>&copy; Les déménageurs suisses</li><li>Design: Dyzalf</li>
 							</ul>
 						</div>
 					</section>
@@ -149,22 +165,9 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-		<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var currentPath = window.location.pathname;
-    if (currentPath.endsWith("index.html")) {
-      var newPath = currentPath.replace("index.html", "accueil");
-      window.history.replaceState(null, null, newPath);
-    }
-  });
-</script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<script>
-  if (window.location.pathname === '/accueil') {
-    window.location.replace('/index.html');
-  }
-</script>
+			
 			
 				
 

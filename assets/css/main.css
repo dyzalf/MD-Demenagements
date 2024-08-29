@@ -371,6 +371,14 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.logo {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100px;
+		z-index: 100000000;
+	}
 /* Row */
 
 	.row {
@@ -2850,6 +2858,29 @@ input, select, textarea {
 
 /* Button */
 
+button {
+    position: fixed;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	z-index: 1000;
+}
+
+
+
+button:first-of-type {
+    top: 20px;
+	z-index: 100000;
+}
+
+button:last-of-type {
+    bottom: 20px;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -3072,12 +3103,9 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
-		height: 3.5em;
+		
+		background-color: transparent;
+		height: 4em;
 		left: 0;
 		line-height: 3.5em;
 		padding: 0 1.25em;

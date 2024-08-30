@@ -44,10 +44,13 @@
 				<button class="scroll-button" onclick="scrollToTop()">HAUT</button>
 				<style>
 				@media (max-width: 767px) {
-					.scroll-button {display: none;
-					}
+					.scroll-button {display: none;}
 				}</style>
-				<button onclick="scrollToBottom()">DEVIS</button>
+				<button class="round-button" onclick="scrollToBottom()">DEVIS</button>
+				<style> 
+				@media (max-width: 600px) {
+            				.round-button {border-radius: 50%; /* Bordure arrondie */}
+				}</style>
 				
 	
 				<script>
